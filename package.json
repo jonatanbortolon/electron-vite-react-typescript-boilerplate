@@ -1,0 +1,30 @@
+{
+  "name": "electron-vite-react-typescript-boilerplate",
+  "description": "Simple Electron boilerplate with Vite, React and Typescript.",
+  "version": "1.0.0",
+  "main": "dist/electron/main.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build:linux": "tsc && vite build && electron-builder --linux",
+    "build:mac": "tsc && vite build && electron-builder --mac",
+    "build:win": "tsc && vite build && electron-builder --win",
+    "build:all": "tsc && vite build && electron-builder --mwl"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.26",
+    "@vitejs/plugin-react": "^2.0.1",
+    "electron": "^20.0.2",
+    "electron-builder": "^23.3.3",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.7",
+    "vite-plugin-electron": "^0.9.0"
+  }
+}
